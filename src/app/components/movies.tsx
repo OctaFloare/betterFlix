@@ -29,7 +29,7 @@ export const Movies = () => {
                     height={300}
                     src={movie.imageUrl}
                     alt={movie.title}
-                    className='rounded-2xl'
+                    className='rounded-xl'
                 />
                 </Link>
                 </div>
