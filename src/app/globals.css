@@ -25,8 +25,7 @@
   flex flex-col
   items-center
   rounded-2xl
-  hover:border-amber-50 
-  ;
+  hover:border-amber-50;
 }
 
 .movies-container {
@@ -34,7 +33,7 @@
 }
 
 .page-container {
-  margin: 10% 10% 10% 10%;
+  /*margin: 10% 10% 10% 10%;*/
 }
 
 body {
