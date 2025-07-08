@@ -19,6 +19,24 @@
   }
 }
 
+.movies-card {
+  @apply border-amber-400 
+  border-4 
+  flex flex-col
+  items-center
+  rounded-2xl
+  hover:border-amber-50 
+  ;
+}
+
+.movies-container {
+  @apply flex gap-10 justify-center;
+}
+
+.page-container {
+  margin: 10% 10% 10% 10%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
