@@ -25,8 +25,14 @@
   flex flex-col
   items-center
   rounded-2xl
-  hover:border-amber-50 
-  ;
+  transition-transform
+  duration-300;
+}
+
+.movies-card:hover{
+  @apply 
+  -translate-y-1
+  border-amber-50;
 }
 
 .movies-container {
