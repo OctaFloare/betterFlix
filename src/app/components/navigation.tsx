@@ -1,17 +1,13 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
 
-export const Navigation = () => {
-    return <div className="flex items-center justify-between p-4 bg-gray-500 text-white">
-        <div className="text-lg font-bold">BetterFlix</div>
-        <div className="flex gap-4">
-            <Link href="/" className="text-white hover:text-gray-300">
-                Home
-            </Link>
-            <Link href="/movies" className="text-white hover:text-gray-300">
-                Movies
-            </Link>
+export const NavigationMenu = () => {
+  return (
+    <nav className="flex justify-between items-center px-8 py-8 bg-gray-900">
+        <div className='text-xl'>🎬 BetterFlix</div>
+        <div className="flex gap-10 text-lg">
+            <Link href={"/"} className='border-b-2 border-white hover:text-gray-400'>Home</Link>
+            <Link href={"/movies"} className='border-b-2 border-white hover:text-gray-400'>Movies</Link>
         </div>
-    </div>
-}
-
+    </nav>
+  );
+};
