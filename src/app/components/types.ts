@@ -1,6 +1,35 @@
+export type CreateMovie = {
+  title: string;
+  imageUrl: string;
+  releaseDate: string;
+  description: string;
+  videoSource: string;
+}
+
 export type Movie = {
-    id: string;
-    title: string;
-    imageUrl: string;
-    releaseDate: string;
-};
+  id: number;
+  title: string;
+  imageUrl: string;
+  releaseDate: string;
+  description: string;
+  videoSource: string;
+  genres: Genre[];
+  cast: Cast[];
+}
+
+export type Cast = {
+  id: number;
+  name: string;
+  role: string;
+  movieId: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export type Genre = {
+  id: number;
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+  movies: Movie[];
+}

@@ -1,68 +1,521 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "title": "Dune: Part Two",
     "imageUrl": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
-    "releaseDate": "2024-03-01"
+    "releaseDate": "2024-03-01",
+    "description": "Sequel to the sci-fi epic Dune.",
+    "videoSource": "https://example.com/dune2.mp4",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Sci-Fi",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 2,
+        "name": "Adventure",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 1,
+        "name": "Timoth\u00e9e Chalamet",
+        "role": "Paul Atreides",
+        "movieId": 1,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 2,
+        "name": "Zendaya",
+        "role": "Chani",
+        "movieId": 1,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "Oppenheimer",
     "imageUrl": "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
-    "releaseDate": "2023-07-21"
+    "releaseDate": "2023-07-21",
+    "description": "A biographical film about J. Robert Oppenheimer.",
+    "videoSource": "https://example.com/oppenheimer.mp4",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Biography",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 4,
+        "name": "Drama",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 3,
+        "name": "Cillian Murphy",
+        "role": "J. Robert Oppenheimer",
+        "movieId": 2,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 4,
+        "name": "Emily Blunt",
+        "role": "Kitty Oppenheimer",
+        "movieId": 2,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "3",
+    "id": 3,
     "title": "Barbie",
     "imageUrl": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
-    "releaseDate": "2023-07-21"
+    "releaseDate": "2023-07-21",
+    "description": "A surreal journey of self-discovery in Barbie Land.",
+    "videoSource": "https://example.com/barbie.mp4",
+    "genres": [
+      {
+        "id": 5,
+        "name": "Fantasy",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 6,
+        "name": "Comedy",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 5,
+        "name": "Margot Robbie",
+        "role": "Barbie",
+        "movieId": 3,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 6,
+        "name": "Ryan Gosling",
+        "role": "Ken",
+        "movieId": 3,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "4",
+    "id": 4,
     "title": "The Flash",
     "imageUrl": "https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
-    "releaseDate": "2023-06-16"
+    "releaseDate": "2023-06-16",
+    "description": "Barry Allen uses his super speed to change the past.",
+    "videoSource": "https://example.com/theflash.mp4",
+    "genres": [
+      {
+        "id": 7,
+        "name": "Action",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 2,
+        "name": "Adventure",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 11,
+        "name": "Superhero",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 7,
+        "name": "Ezra Miller",
+        "role": "Barry Allen / The Flash",
+        "movieId": 4,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 8,
+        "name": "Michael Keaton",
+        "role": "Batman",
+        "movieId": 4,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "5",
+    "id": 5,
     "title": "John Wick: Chapter 4",
     "imageUrl": "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-    "releaseDate": "2023-03-24"
+    "releaseDate": "2023-03-24",
+    "description": "John Wick fights his way through the underworld.",
+    "videoSource": "https://example.com/johnwick4.mp4",
+    "genres": [
+      {
+        "id": 7,
+        "name": "Action",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 12,
+        "name": "Thriller",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 8,
+        "name": "Crime",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 9,
+        "name": "Keanu Reeves",
+        "role": "John Wick",
+        "movieId": 5,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 10,
+        "name": "Donnie Yen",
+        "role": "Caine",
+        "movieId": 5,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "6",
+    "id": 6,
     "title": "Wonka",
     "imageUrl": "https://image.tmdb.org/t/p/w500/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-    "releaseDate": "2023-12-15"
+    "releaseDate": "2023-12-15",
+    "description": "The origin story of Willy Wonka.",
+    "videoSource": "https://example.com/wonka.mp4",
+    "genres": [
+      {
+        "id": 5,
+        "name": "Fantasy",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 9,
+        "name": "Musical",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 11,
+        "name": "Timoth\u00e9e Chalamet",
+        "role": "Willy Wonka",
+        "movieId": 6,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 12,
+        "name": "Hugh Grant",
+        "role": "Oompa Loompa",
+        "movieId": 6,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "7",
+    "id": 7,
     "title": "Guardians of the Galaxy Vol. 3",
     "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
-    "releaseDate": "2023-05-05"
+    "releaseDate": "2023-05-05",
+    "description": "The Guardians face new threats to their team.",
+    "videoSource": "https://example.com/gotg3.mp4",
+    "genres": [
+      {
+        "id": 7,
+        "name": "Action",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 2,
+        "name": "Adventure",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 1,
+        "name": "Sci-Fi",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 13,
+        "name": "Chris Pratt",
+        "role": "Peter Quill",
+        "movieId": 7,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 14,
+        "name": "Zoe Saldana",
+        "role": "Gamora",
+        "movieId": 7,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "8",
+    "id": 8,
     "title": "The Super Mario Bros. Movie",
     "imageUrl": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
-    "releaseDate": "2023-04-05"
+    "releaseDate": "2023-04-05",
+    "description": "Mario and Luigi journey through the Mushroom Kingdom.",
+    "videoSource": "https://example.com/mario.mp4",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Animation",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 2,
+        "name": "Adventure",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 6,
+        "name": "Comedy",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 15,
+        "name": "Chris Pratt",
+        "role": "Mario",
+        "movieId": 8,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 16,
+        "name": "Charlie Day",
+        "role": "Luigi",
+        "movieId": 8,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "9",
-    "title": "Mission: Impossible – Dead Reckoning Part One",
+    "id": 9,
+    "title": "Mission: Impossible \u2013 Dead Reckoning Part One",
     "imageUrl": "https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg",
-    "releaseDate": "2023-07-12"
+    "releaseDate": "2023-07-12",
+    "description": "Ethan Hunt and the IMF team must track down a weapon.",
+    "videoSource": "https://example.com/mi7.mp4",
+    "genres": [
+      {
+        "id": 7,
+        "name": "Action",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 12,
+        "name": "Thriller",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 17,
+        "name": "Tom Cruise",
+        "role": "Ethan Hunt",
+        "movieId": 9,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 18,
+        "name": "Hayley Atwell",
+        "role": "Grace",
+        "movieId": 9,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "10",
+    "id": 10,
     "title": "Killers of the Flower Moon",
     "imageUrl": "https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
-    "releaseDate": "2023-10-20"
+    "releaseDate": "2023-10-20",
+    "description": "A true-crime drama based on real events.",
+    "videoSource": "https://example.com/killersoftheflowermoon.mp4",
+    "genres": [
+      {
+        "id": 8,
+        "name": "Crime",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 4,
+        "name": "Drama",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 19,
+        "name": "Leonardo DiCaprio",
+        "role": "Ernest Burkhart",
+        "movieId": 10,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 20,
+        "name": "Lily Gladstone",
+        "role": "Mollie Burkhart",
+        "movieId": 10,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "id": "11",
+    "id": 11,
     "title": "The Marvels",
     "imageUrl": "https://image.tmdb.org/t/p/w500/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-    "releaseDate": "2023-11-10"
+    "releaseDate": "2023-11-10",
+    "description": "Carol Danvers joins forces with other heroes.",
+    "videoSource": "https://example.com/themarvels.mp4",
+    "genres": [
+      {
+        "id": 7,
+        "name": "Action",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 2,
+        "name": "Adventure",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      },
+      {
+        "id": 11,
+        "name": "Superhero",
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00",
+        "movies": []
+      }
+    ],
+    "cast": [
+      {
+        "id": 21,
+        "name": "Brie Larson",
+        "role": "Captain Marvel",
+        "movieId": 11,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      },
+      {
+        "id": 22,
+        "name": "Iman Vellani",
+        "role": "Ms. Marvel",
+        "movieId": 11,
+        "createdAt": "2023-01-01T00:00:00",
+        "updatedAt": "2023-01-01T00:00:00"
+      }
+    ],
+    "createdAt": "2023-01-01T00:00:00",
+    "updatedAt": "2023-01-01T00:00:00"
   }
 ]

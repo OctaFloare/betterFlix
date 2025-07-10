@@ -35,6 +35,11 @@
   border-amber-50;
 }
 
+.create-movie-container {
+  display: flex;
+  justify-content: center;
+}
+
 .movies-container {
   @apply flex gap-10 justify-center w-full;
 }
