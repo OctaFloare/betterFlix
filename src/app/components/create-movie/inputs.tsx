@@ -6,16 +6,14 @@ type Props = {
     formik: FormikProps<CreateMovie>
 }
 
-export const Inputs = ({ formik }: Props) => {
-    console.log(formik.touched, "this is touched")
+export const Inputs = ({ formik } : Props) => {
     return (
-        <div className="input-container">
+        <div className="input-grid">
             <Input 
                 labelText="Title"
                 inputName="title"
                 type="text"
                 onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
                 placeholder="Please fill the title"
                 value={formik.values.title}
                 touched={formik.touched.title}
@@ -58,7 +56,7 @@ export const Inputs = ({ formik }: Props) => {
             <Input 
                 labelText="Release Date"
                 inputName="releaseDate"
-                type="date"
+                type="text"
                 onChange={formik.handleChange}
                 placeholder="Please fill the release date"
                 value={formik.values.releaseDate}

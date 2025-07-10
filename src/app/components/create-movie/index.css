@@ -1,6 +1,6 @@
 .form-input {
-   display: flex;
-   justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
    width: 100%;
 }
 
@@ -15,4 +15,21 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+}
+
+input {
+    text-align: center;
+}
+
+.input-grid {
+    display: grid;
+    gap: 1.5rem; /* spacing between inputs */
+    width: 100%;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .input-grid {
+        grid-template-columns: 1fr; /* stack inputs on small screens */
+    }
 }
