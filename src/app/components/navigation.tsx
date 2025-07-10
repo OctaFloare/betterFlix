@@ -7,6 +7,7 @@ export const NavigationMenu = () => {
         <div className="flex gap-10 text-lg">
             <Link href={"/"} className='border-b-2 border-white hover:text-gray-400'>Home</Link>
             <Link href={"/movies"} className='border-b-2 border-white hover:text-gray-400'>Movies</Link>
+            <Link href={"/create-movie"} className='border-b-2 border-white hover:text-gray-400'>Create Movie</Link>
         </div>
     </nav>
   );

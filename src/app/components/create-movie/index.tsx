@@ -24,8 +24,24 @@ export const CreateMovie = () => {
             description: '',
             videoSource: '',
         },
-        onSubmit: (values) => {
-            console.log(values, "this are values")
+        onSubmit: async (values) => {
+            try {
+                const response = await fetch('/api/movies', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(values),
+                });
+                if (!response.ok) {
+                    throw new Error('Failed to create movie');
+                }
+                formik.resetForm();
+                alert('Succes');
+            } catch (error) {
+                alert('Error creating movie');
+                console.error(error);
+            }
         },
         validationSchema: createMovieValidationSchema
     })
