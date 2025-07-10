@@ -36,7 +36,7 @@
 }
 
 .movies-container {
-  @apply flex gap-10 justify-center;
+  @apply flex gap-10 justify-center w-full;
 }
 
 .page-container {
