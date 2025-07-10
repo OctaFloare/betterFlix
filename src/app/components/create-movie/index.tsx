@@ -1,5 +1,6 @@
 'use client'
 
+import axios from "axios"
 import { useFormik } from "formik"
 import { Inputs } from "./inputs"
 import * as yup from 'yup'
@@ -25,7 +26,17 @@ export const CreateMovie = () => {
             videoSource: '',
         },
         onSubmit: (values) => {
-            console.log(values, "this are values")
+            axios.post("/api/movies", {
+            title: values.title,
+            imageUrl: values.imageUrl,
+            releaseDate: values.releaseDate,
+            description: values.description,
+            videoSource: values.videoSource,
+            genres: [],
+            cast: []
+            }).then(res=>{
+                console.log(res.status);
+            })
         },
         validationSchema: createMovieValidationSchema
     })
