@@ -8,7 +8,7 @@ type Props = {
 }
 
 export const MovieCard = ({ movie }: Props) => {
-    return <Link href={`/movie/${movie.title}`} className="movies-card">
+    return <Link href={`/movie-page/${movie.id}`} className="movies-card">
                 <Image
                     width={250}
                     height={250}
