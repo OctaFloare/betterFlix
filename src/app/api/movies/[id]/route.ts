@@ -5,11 +5,16 @@ import { Movie } from '@/app/components/types'
 
 const filePath = path.join(process.cwd(), 'data', 'mockMovies.json')
 
-// GET a single movie by id
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET(
+  request: Request,
+  context: { params: { id: string } }
+) {
+  const { params } = context; // ✅ await here
+
   const data = await fs.readFile(filePath, 'utf-8')
   const movies = JSON.parse(data)
-  const movie = movies.find((m: Movie) => String(m.id) === params.id)
+
+  const movie = movies.find((m: Movie) => {return String(m.id) === params.id})
 
   if (!movie) {
     return NextResponse.json({ error: 'Movie not found' }, { status: 404 })
@@ -17,6 +22,7 @@ export async function GET(request: Request, { params }: { params: { id: string }
 
   return NextResponse.json(movie)
 }
+
 
 export async function PUT(req: Request) {
   const updatedMovie: Movie = await req.json()
