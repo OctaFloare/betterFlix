@@ -18,7 +18,7 @@ export const Carousel = ({ movies }: Props) => {
     if (instanceRef.current) {
       instanceRef.current.update();
     }
-  }, [movies]);
+  }, [movies, instanceRef]);
 
     return <div ref={sliderRef} className="keen-slider">
         {!!movies && movies.map((movie, index) => {
