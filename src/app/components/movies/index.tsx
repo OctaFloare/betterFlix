@@ -1,20 +1,17 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { Carousel } from './carousel'
-import axios, { AxiosResponse } from 'axios'
-import { Movie } from '../types';
+import { useMoviesQuery } from './hooks/useMoviesQuery';
 
 export const Movies = () => {
-    const [movies, setMovies] = useState<Movie[]>([]);
+  const { movies, error, isLoading } = useMoviesQuery()
 
-    useEffect(() => {
-      axios.get<Movie[]>('/api/movies').then((response: AxiosResponse<Movie[]>) => {
-        setMovies(response.data)
-      })
-    }, [setMovies])
+  return <div className='movies-container mt-8 flex-col'>
+      {error && <div>Something went wrong</div>}
+      {isLoading && <div>Loading...</div>}
+      {movies && <>
+          <Carousel />
+      </>}
 
-    return <div className='movies-container mt-8'>
-        <Carousel movies={movies} />
     </div>
 }

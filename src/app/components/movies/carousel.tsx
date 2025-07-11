@@ -1,14 +1,11 @@
-import { Movie } from "../types"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import { MovieCard } from "./movieCard"
 import { useEffect } from "react"
+import { useMoviesQuery } from './hooks/useMoviesQuery'
 
-type Props = {
-    movies?: Movie[]
-}
-
-export const Carousel = ({ movies }: Props) => {
+export const Carousel = () => {
+    const { movies } = useMoviesQuery();
 
     const [sliderRef, instanceRef] = useKeenSlider({
         slides: { perView: 5, spacing: 8 },
