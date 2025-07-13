@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.play-button{
+    @apply 
+    px-5 py-2 
+    bg-green-500
+    font-semibold 
+    rounded-xl
+    transition-transform
+    duration-300;
+}
+
+.play-button:hover{
+    @apply
+    bg-green-600
+    -translate-y-1;
+}
+
+.update-button{
+    @apply
+    px-5 py-2
+    bg-blue-500
+    font-semibold 
+    rounded-xl
+    transition-transform
+    duration-300;
+}
+
+.update-button:hover{
+    @apply
+    bg-blue-600
+    -translate-y-1;
+}
+
+.delete-button{
+    @apply
+    px-5 py-2
+    bg-red-500
+    font-semibold 
+    rounded-xl
+    transition-transform
+    duration-300;
+}
+
+.delete-button:hover{
+    @apply
+    bg-red-600
+    -translate-y-1;
+}
