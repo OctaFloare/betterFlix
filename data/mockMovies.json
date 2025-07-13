@@ -517,12 +517,5 @@
     ],
     "createdAt": "2023-01-01T00:00:00",
     "updatedAt": "2023-01-01T00:00:00"
-  },
-  {
-    "title": "GuardiansoftheGalaxyVol.3",
-    "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
-    "releaseDate": "2023-05-05",
-    "description": "The Guardians face new challenges as they protect the galaxy and one of their own.",
-    "videoSource": "https://example.com/guardians3.mp4"
   }
 ]
