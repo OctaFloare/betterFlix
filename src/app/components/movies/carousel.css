@@ -2,3 +2,8 @@
     height: 300px;
     width: 300px;
 }
+
+.slide {
+    overflow: visible !important;
+    z-index: 1;
+}

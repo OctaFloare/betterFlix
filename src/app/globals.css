@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2C3E50;
     --foreground: #ededed;
   }
 }
@@ -46,6 +46,7 @@
 
 .page-container {
   /*margin: 10% 10% 10% 10%;*/
+  margin-bottom: 10%;
 }
 
 body {

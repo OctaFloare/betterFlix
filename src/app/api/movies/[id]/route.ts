@@ -53,7 +53,7 @@ export async function DELETE(
   const data = await fs.readFile(filePath, 'utf-8');
   const movies = JSON.parse(data);
 
-  const newMovies = movies.filter((movie: Movie) => String(movie.id) !== params.id);
+  const newMovies = movies.filter((movie: Movie) => {return String(movie.id) !== params.id});
   await fs.writeFile(filePath, JSON.stringify(newMovies, null, 2));
 
   return NextResponse.json({ success: true });

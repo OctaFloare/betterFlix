@@ -4,6 +4,8 @@ import { MovieCard } from "./movieCard"
 import { useEffect } from "react"
 import { useMoviesQuery } from './hooks/useMoviesQuery'
 
+import './carousel.css'
+
 export const Carousel = () => {
     const { movies } = useMoviesQuery();
 
@@ -17,10 +19,10 @@ export const Carousel = () => {
     }
   }, [movies, instanceRef]);
 
-    return <div ref={sliderRef} className="keen-slider">
+    return <div ref={sliderRef} className="keen-slider overflow-visible!">
         {!!movies && movies.map((movie, index) => {
             return <div key={`${movie.title}-${index}`}
-                        className={`keen-slider__slide number-slide${index + 1} z-1`}>
+                        className={`keen-slider__slide number-slide${index + 1} slide`}>
                 <MovieCard movie={movie}/>
             </div>
         })}
