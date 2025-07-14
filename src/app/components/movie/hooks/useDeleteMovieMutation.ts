@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const useMovie = () => {
+export const useDeleteMovieMutation = () => {
     const deleteMovie = async (id: number) => {
         try {
             const response = await axios.delete(`/api/movies/${id}`);

@@ -1,9 +1,5 @@
 'use client'
 
-import axios from "axios";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { Movie as MovieType } from "../types";
 import { useParams } from "next/navigation";
 import MovieCard from "./movieCard";
 import { useMovieQuery } from "./hooks/useMovieQuery";

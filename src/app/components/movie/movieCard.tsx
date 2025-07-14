@@ -1,8 +1,8 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Movie } from "../types"
 import '../movies/carousel.css'
-import {    useMovie } from "./hooks/useMovie";
+import { useDeleteMovieMutation } from "./hooks/useDeleteMovieMutation";
+import { useRouter } from "next/navigation";
 
 type Props = {
     movie: Movie
@@ -10,7 +10,13 @@ type Props = {
 }
 
 export const MovieCard = ({ movie, id }: Props) => {
-    const { deleteMovie } = useMovie();
+    const { deleteMovie } = useDeleteMovieMutation();
+    const router = useRouter()
+
+    const onClick = () => {
+        deleteMovie(+id);
+       router.push('/movies') 
+    }
 
     return (
         <>
@@ -28,16 +34,17 @@ export const MovieCard = ({ movie, id }: Props) => {
                     <div className="text-lg">{movie.description}</div>
                     <br />
                     <div>
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg" onClick={() => console.log("Watch movie clicked")}>
-                            {/* <a href={filmData.videoSource} rel="noopener noreferrer">Watch Movie</a> */}
-                            <p>Watch Movie</p>
+                        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                            <Link href={`/movie-page/${id}/watch-movie`}>
+                                <p>Watch Movie</p>
+                            </Link>
                         </button>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-lg ml-4" onClick={() => console.log("Edit movie clicked")}>
+                        <button className="bg-green-500 text-white px-4 py-2 rounded-lg ml-4">
                             <Link href={`/update-movie/${id}`} rel="noopener noreferrer">
                                 <p>Edit Movie</p>
                             </Link>
                         </button>
-                        <button className="bg-red-500 text-white px-4 py-2 rounded-lg ml-4" onClick={() => deleteMovie(+id)}>
+                        <button className="bg-red-500 text-white px-4 py-2 rounded-lg ml-4" onClick={onClick}>
                             <p>Delete Movie</p>
                         </button>
                     </div>
