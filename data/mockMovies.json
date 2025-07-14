@@ -48,7 +48,7 @@
     "title": "Oppenheimer",
     "imageUrl": "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
     "releaseDate": "2023-07-21",
-    "description": "A Biographical film about J. Robert Oppenheimer.",
+    "description": "A biographical film about J. Robert Oppenheimer.",
     "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
@@ -519,10 +519,10 @@
     "updatedAt": "2023-01-01T00:00:00"
   },
   {
-    "title": "Oppenheimer",
-    "imageUrl": "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
-    "releaseDate": "2023-07-21",
-    "description": "A biograpfddshical film about J. Robert Oppenheimer.",
+    "title": "GuardiansoftheGalaxyVol.3",
+    "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+    "releaseDate": "2023-05-05",
+    "description": "The Guardians face new challenges as they protect the galaxy and one of their own.",
     "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
   }
 ]
