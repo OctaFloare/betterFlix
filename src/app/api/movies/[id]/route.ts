@@ -39,12 +39,16 @@ export async function PUT(req: Request) {
   return NextResponse.json(updatedMovie)
 }
 
-export async function DELETE(req: Request) {
-  const { id }: Movie = await req.json()
-  const data = await fs.readFile(filePath, 'utf-8')
-  const movies = JSON.parse(data)
+export async function DELETE(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
+  const data = await fs.readFile(filePath, 'utf-8');
+  const movies = JSON.parse(data);
 
-  const newMovies = movies.filter((movie: Movie) => {return movie.id !== id})
-  await fs.writeFile(filePath, JSON.stringify(newMovies, null, 2))
-  return NextResponse.json({ success: true })
+  const newMovies = movies.filter((movie: Movie) => String(movie.id) !== params.id);
+  await fs.writeFile(filePath, JSON.stringify(newMovies, null, 2));
+
+  return NextResponse.json({ success: true });
 }
+
