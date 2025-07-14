@@ -5,7 +5,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
     "releaseDate": "2024-03-01",
     "description": "Sequel to the sci-fi epic Dune.",
-    "videoSource": "https://example.com/dune2.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 1,
@@ -25,7 +25,7 @@
     "cast": [
       {
         "id": 1,
-        "name": "Timothée Chalamet",
+        "name": "Timoth\u00e9e Chalamet",
         "role": "Paul Atreides",
         "movieId": 1,
         "createdAt": "2023-01-01T00:00:00",
@@ -49,7 +49,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
     "releaseDate": "2023-07-21",
     "description": "A biographical film about J. Robert Oppenheimer.",
-    "videoSource": "https://example.com/oppenheimer.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 3,
@@ -93,7 +93,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
     "releaseDate": "2023-07-21",
     "description": "A surreal journey of self-discovery in Barbie Land.",
-    "videoSource": "https://example.com/barbie.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 5,
@@ -137,7 +137,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
     "releaseDate": "2023-06-16",
     "description": "Barry Allen uses his super speed to change the past.",
-    "videoSource": "https://example.com/theflash.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 7,
@@ -188,7 +188,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
     "releaseDate": "2023-03-24",
     "description": "John Wick fights his way through the underworld.",
-    "videoSource": "https://example.com/johnwick4.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 7,
@@ -239,7 +239,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
     "releaseDate": "2023-12-15",
     "description": "The origin story of Willy Wonka.",
-    "videoSource": "https://example.com/wonka.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 5,
@@ -259,7 +259,7 @@
     "cast": [
       {
         "id": 11,
-        "name": "Timothée Chalamet",
+        "name": "Timoth\u00e9e Chalamet",
         "role": "Willy Wonka",
         "movieId": 6,
         "createdAt": "2023-01-01T00:00:00",
@@ -283,7 +283,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
     "releaseDate": "2023-05-05",
     "description": "The Guardians face new threats to their team.",
-    "videoSource": "https://example.com/gotg3.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 7,
@@ -334,7 +334,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
     "releaseDate": "2023-04-05",
     "description": "Mario and Luigi journey through the Mushroom Kingdom.",
-    "videoSource": "https://example.com/mario.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 10,
@@ -381,11 +381,11 @@
   },
   {
     "id": 9,
-    "title": "Mission: Impossible – Dead Reckoning Part One",
+    "title": "Mission: Impossible \u2013 Dead Reckoning Part One",
     "imageUrl": "https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg",
     "releaseDate": "2023-07-12",
     "description": "Ethan Hunt and the IMF team must track down a weapon.",
-    "videoSource": "https://example.com/mi7.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 7,
@@ -429,7 +429,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
     "releaseDate": "2023-10-20",
     "description": "A true-crime drama based on real events.",
-    "videoSource": "https://example.com/killersoftheflowermoon.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 8,
@@ -473,7 +473,7 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
     "releaseDate": "2023-11-10",
     "description": "Carol Danvers joins forces with other heroes.",
-    "videoSource": "https://example.com/themarvels.mp4",
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "genres": [
       {
         "id": 7,
@@ -523,6 +523,6 @@
     "imageUrl": "https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
     "releaseDate": "2023-05-05",
     "description": "The Guardians face new challenges as they protect the galaxy and one of their own.",
-    "videoSource": "https://example.com/guardians3.mp4"
+    "videoSource": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
   }
 ]
