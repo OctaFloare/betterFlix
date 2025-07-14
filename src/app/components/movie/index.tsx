@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Movie as MovieType } from "../types";
 import { useParams } from "next/navigation";
+import BottomButtons from "./bottom-buttons";
 
 const getMovie = async (id: number) => {
     const url = `/api/movies/${id}`;
@@ -50,6 +51,7 @@ export const Movie = () => {
             <p className="text-lg mb-2"><span className="font-semibold">Release Date:</span> {movie.releaseDate}</p>
             <p className="text-md mb-6">{movie.description}</p>
             <p className="text-md mb-6"><span className="font-semibold">Movie Source: </span>{movie.videoSource}</p>
+            <BottomButtons></BottomButtons>
         </div>
     );
 }
