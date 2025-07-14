@@ -24,19 +24,26 @@ export async function GET(
 }
 
 
-export async function PUT(req: Request) {
-  const updatedMovie: Movie = await req.json()
-  const data = await fs.readFile(filePath, 'utf-8')
-  const movies = JSON.parse(data)
+export async function PUT(
+  request: Request,
+  context: { params: { id: string } }
+) {
+  const { id } = context.params;
+  const updatedFields: Partial<Movie> = await request.json();
+  const data = await fs.readFile(filePath, 'utf-8');
+  const movies = JSON.parse(data);
 
-  const index = movies.findIndex((movie: Movie) => {return movie.id === updatedMovie.id})
+  const index = movies.findIndex((movie: Movie) => String(movie.id) === id);
   if (index === -1) {
-    return NextResponse.json({ error: 'Movie not found' }, { status: 404 })
+    return NextResponse.json({ error: 'Movie not found' }, { status: 404 });
   }
 
-  movies[index] = updatedMovie
-  await fs.writeFile(filePath, JSON.stringify(movies, null, 2))
-  return NextResponse.json(updatedMovie)
+  // Merge updated fields with existing movie
+  const updatedMovie = { ...movies[index], ...updatedFields, id };
+  movies[index] = updatedMovie;
+
+  await fs.writeFile(filePath, JSON.stringify(movies, null, 2));
+  return NextResponse.json(updatedMovie);
 }
 
 export async function DELETE(
