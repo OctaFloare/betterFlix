@@ -33,7 +33,7 @@ export async function PUT(
   const data = await fs.readFile(filePath, 'utf-8');
   const movies = JSON.parse(data);
 
-  const index = movies.findIndex((movie: Movie) => String(movie.id) === id);
+  const index = movies.findIndex((movie: Movie) => {return String(movie.id) === id});
   if (index === -1) {
     return NextResponse.json({ error: 'Movie not found' }, { status: 404 });
   }
