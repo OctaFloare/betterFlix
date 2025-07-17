@@ -10,3 +10,19 @@ export const GET_CHARACTERS = gql`
     }
   }
 `;
+
+export const GET_EPISODES = gql`
+  query GetEpisodes { 
+    episodes {
+      results {
+        id
+        name
+        air_date
+        characters {
+          id
+          name
+        }
+      }
+    }
+  }
+`;
