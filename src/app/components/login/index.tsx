@@ -6,26 +6,26 @@ import { LoginFormValues } from "../types"
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 import { useState } from "react"
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation"
 
 const loginUser = async (values: LoginFormValues) =>{
     const response = await axios.post('/api/login', values)
     return response.data;
 }
 
-
 export const Login = () => {
-    const [message, setMessage] = useState("");
     const router = useRouter();
+    const [message, setMessage] = useState("");
 
     const {mutate: loginMutattion} = useMutation({
         mutationKey: ['login'],
         mutationFn: loginUser,
         onSuccess: (data) =>{
             localStorage.setItem("user", JSON.stringify(data));
+            router.push('/')
             setMessage(`Welcome back, ${data.name || data.email}!`);
         },
-        onError: (error: any) => {
+        onError: () => {
             setMessage("Login failed, please try again.");
         }
     })

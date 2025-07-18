@@ -19,6 +19,8 @@ export const NavigationMenu = () => {
     localStorage.removeItem("user");
     setUser(null);
   }
+  
+  console.log(user, "this is user")
 
   return (
     <nav className="flex justify-between items-center px-8 py-8 bg-gray-900 mb-20">

@@ -23,7 +23,7 @@ export const Inputs = ({ formik } : Props) => {
             <Input 
                 labelText="Password"
                 inputName="password"
-                type="text"
+                type="password"
                 onChange={formik.handleChange}
                 placeholder="Please fill the password"
                 value={formik.values.password}
